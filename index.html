@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Timer</title>
+    <title>Life Journey Timer</title>
     <link rel="stylesheet" href="style.css">
-    <script 
-      src="https://kit.fontawesome.com/a3b767670a.js" crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script defer src="script.js"></script>
+</head>
+<body>
     <div class="background">
-      <div class="container">
-        <h1> Kindly Enter Your Date of Birth</h1>
-      </div>
+        <div class="container">
+            <!-- Date Input Container -->
+            <div class="input-container">
+                <h1>Kindly Enter Your Date Of Birth</h1>
+                <input type="date" id="dob" />
+                <button onclick="startTimer()">Submit</button>
+            </div>
+            <!-- Timer Display Container -->
+            <div class="time-container hide">
+                <h1>How Much Life Journey Covered, Till Now</h1>
+                <div class="time-item">
+                    <div id="years">0</div>
+                    <div class="label">Years</div>
+                </div>
+                <div class="time-item">
+                    <div id="months">0</div>
+                    <div class="label">Months</div>
+                </div>
+                <div class="time-item">
+                    <div id="days">0</div>
+                    <div class="label">Days</div>
+                </div>
+                <div class="time-item">
+                    <div id="hours">0</div>
+                    <div class="label">Hours</div>
+                </div>
+                <div class="time-item">
+                    <div id="minutes">0</div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="time-item">
+                    <div id="seconds">0</div>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container">
-      <h1> How Muck Life Journey Covered,Till Now </h1>
-      <div class="time-container">
-        <h2>
-          <div id="years">0</div>
-        </h2>
-        <h2>
-          <div id="months">0</div>
-        </h2>
-        <h2>
-          <div id="days">0</div>
-        </h2>
-        <h2>
-          <div id="hours">0</div>
-        </h2>
-        <h2>
-          <div id="minutes">0</div>
-        </h2>
-        <h2>
-          <div id="seconds">0</div>
-        </h2>
-      </div>
-    </div>
-
-    <div class="settings">
-      <i id="settingIcon" class="fa fa-cog"></i>
-      <div id="settingContent" class="settings-content hide">
-        <input type="date" id="dobInput">
-        <button id="dobButton">Add DOB</button>
-      </div>
-    </div>
-  <script src="script.js"></script>
-  </body>
+</body>
 </html>
